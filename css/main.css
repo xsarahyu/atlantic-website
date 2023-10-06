@@ -1,0 +1,294 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'AGaramond Pro-Regular';
+    src: url(assets/fonts/AGaramondPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Graphik Font';
+    src: url(assets/fonts/GraphikRegular.otf);
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+/*
+section {
+    border: 1px solid black;
+}
+*/
+
+main {
+    margin: 0 5%;
+    font-family: 'Graphik Font', Arial,sans-serif;
+}
+
+header {
+    height: 15rem;
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    padding-top: 3rem;
+    border-top: 0.25rem solid black;
+    font-family: 'Graphik Font', Arial,sans-serif;
+    font-size: 0.9rem;
+}
+
+    .leftNav {
+        float: left;
+        margin-left: 8rem;
+    }
+
+    .leftNav li {
+        float: left;
+        margin-right: 2rem;
+    }
+
+    .rightNav {
+        float: right;
+        margin-right: 8rem;
+    }
+
+    .rightNav li {
+        float: left;
+        margin-left: 2rem;
+    }
+
+    .rightNav button {
+        padding: 0.75rem 1rem;
+        margin-top: -1rem;
+        background: #e7131a;
+        color: white;
+        border-radius: 0.3rem;
+        border: none;
+        height: 2.4rem;
+        width: 6.7rem;
+        font-size: 0.9rem;
+    }
+
+    header img {
+        float: left;
+        width: 12rem;
+        margin-top: -2rem;
+        margin-left: 12.2rem;
+    }
+
+    .line {
+        border-top: 1px solid black;
+        position: relative;
+        top: 4rem;
+        z-index: -1;
+    }
+
+.top {
+    float: left;
+    height: 41rem;
+    width: 100%;
+    margin-top: -1rem;
+}
+
+.bottom {
+    float: left;
+    height: 27rem;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.col-1-4 {
+    float: left;
+    height: 100%;
+    width: 25%;
+}
+
+    .row-1-2 {
+        float: left;
+        height: 46.25%;
+        width: 90%;
+        margin: 1rem;
+        margin-bottom: 0;
+    }
+
+        .row-1-2 h1 {
+            padding-bottom: 0.25rem;
+        }
+
+    .row-1-4 {
+        float: left;
+        height: 21.9%;
+        width: 90%;
+        margin: 5%;
+        margin-bottom: 0;
+    }
+
+        .row-1-4 img {
+            width: 30%;
+            float: right;
+            margin-left: 1rem;
+        }
+
+        .row-1-4 h2 {
+            padding-bottom: 0.6rem;
+        }
+
+    .col-1-4 p {
+        padding-bottom: 0.75rem;
+    }
+
+.col-1-2 {
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+    .col-1-2 h1, .col-1-2 p, .col-1-2 div {
+        text-align: center;
+    }
+    
+    .col-1-2 h1 {
+        font-size: 2.25rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.5rem;
+    }
+    
+    .col-1-2 p {
+        padding-bottom: 0.75rem;
+    }
+
+.mainArticle, .bottomArticle {
+    margin: 1rem;
+}
+
+.mainArticle {
+    height: 95%;
+}
+
+.bottomArticle {
+    height: 92.5%;
+}
+
+.row-1-2 img, .col-1-2 img, .bottom .col-1-4 img {
+    width: 100%;
+}
+
+h1, h2 {
+    font-family: 'AGaramond Pro-Regular', Garamond, Times, serif;
+    font-weight: normal;
+}
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.25rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+p {
+    font-family: 'AGaramond Pro-Regular', Garamond, Times, serif;
+}
+
+.author {
+    font-weight: bold;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+.imgSource {
+    position: relative;
+    top: -0.5rem;
+}
+
+.imgSource a {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #5e6a74;
+}
+
+@media (max-width: 1226px) {
+    .rightNav {
+        float: left;
+        position: relative;
+        top: -9.1rem;
+        left: 28.75rem;
+    }
+}
+
+@media (max-width: 906px) {
+    .top {
+        height: auto;
+    }
+    
+    .A {
+        width: 50%;
+    }
+
+    .C {
+        width: 100%;
+    }
+
+    .C .row-1-4 {
+        width: 44%;
+        height: 8rem;
+        margin: 3%;
+    }
+
+    .D {
+        width: 50%;
+    }
+}
+
+@media (max-width: 880px) {
+    li {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+    .A {
+        width: 105%;
+    }
+
+    .B {
+        width: 100%;
+    }
+
+    .C {
+        width: 100%;
+    }
+
+    .C .row-1-4 {
+        width: 94%;
+        margin: 2%;
+    }
+
+    .D {
+        width: 100%;
+    }
+}
