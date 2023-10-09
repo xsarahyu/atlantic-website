@@ -1,7 +1,7 @@
 # The Atlantic Website
 
 ### Description
-A fully responsive mock-up of the Atlantic homepage.
+A responsive replica of the Atlantic homepage.
 
 <img src="atlantic.png">
 
